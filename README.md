@@ -69,6 +69,11 @@ pip install -r requirements_gpu.txt
 You can use any corpus containing `.wav` files.
 We've mainly used the [VCTK corpus](http://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html) (around 10.4GB, [Alternative host](http://www.udialogue.org/download/cstr-vctk-corpus.html)) so far.
 
+download VCTK corpus
+```bash
+wget http://homepages.inf.ed.ac.uk/jyamagis/release/VCTK-Corpus.tar.gz
+```
+
 In order to train the network, execute
 ```bash
 python train.py --data_dir=corpus
